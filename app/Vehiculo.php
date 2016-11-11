@@ -11,7 +11,7 @@ class Vehiculo extends Model{
 
     protected $table = "vehiculos";
     protected $primary = "serie";
-    protected $fillable = array('color','cilindraje','potencia','peso');
+    protected $fillable = array('color','cilindraje','potencia','peso','fabricante_id');
 
     public function Fabricante(){
 

@@ -12,11 +12,11 @@ class Fabricante extends Model{
     protected $table = "fabricantes";
     //protected $primary = "id";
     protected $fillable = array('nombre','telefono');
+    protected $hidden = ['created_at', 'updated_at'];
 
+    public function vehiculos(){
 
-    public function Vehiculos(){
-
-        $this->hasMany('Vehiculo');
+       return $this->hasMany('App\Vehiculo');
     }
 
 }

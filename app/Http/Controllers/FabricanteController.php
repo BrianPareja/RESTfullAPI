@@ -24,7 +24,7 @@ class FabricanteController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return "MOSTRANDO MENU DE LA CREACION";
 	}
 
 	/**
@@ -45,7 +45,7 @@ class FabricanteController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		return "Mostrando el Id con $id";
 	}
 
 	/**
@@ -56,7 +56,7 @@ class FabricanteController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		return "Editando el fabricante $id";
 	}
 
 	/**
@@ -67,7 +67,7 @@ class FabricanteController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
+		return "Actualizando el fabricante con $id";
 	}
 
 	/**
@@ -78,7 +78,7 @@ class FabricanteController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		return "Eliminando el fabricante con $id";
 	}
 
 }

@@ -12,9 +12,14 @@ class VehiculoController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function showAll()
 	{
-		//
+		return "mostrando los vehiculos";
+	}
+
+	public function index($id)
+	{
+		return "mostrando el vehiculo con $id";
 	}
 
 	/**
@@ -22,9 +27,9 @@ class VehiculoController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($id)
 	{
-		//
+		return "creando el vehiculo con $id";
 	}
 
 	/**
@@ -43,9 +48,9 @@ class VehiculoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($idFabricante, $idVehiculo)
 	{
-		//
+		return "mostrando el vehiculo con $idFabricante";
 	}
 
 	/**
@@ -54,9 +59,9 @@ class VehiculoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($idFabricante,$idVehiculo)
 	{
-		//
+		return "mostrando el formulario para editar el vehiculo con $idVehiculo -  del fabricante $idFabricante";
 	}
 
 	/**
@@ -65,9 +70,9 @@ class VehiculoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($idFabricante,$idVehiculo)
 	{
-		//
+		return "mostrando el formulario para actualizar el vehiculo con $idVehiculo -  del fabricante $idFabricante";
 	}
 
 	/**
